@@ -1,0 +1,148 @@
+.iconpost{
+    width: 140px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.cont-local{
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.localh1{
+    margin-left: 75px;
+    padding-top: 25px;
+}
+
+.efectext1{
+    font-weight: bold;
+  font-family: monospace;
+  text-shadow: 
+    0 0 0 rgb(196, 6, 6), 
+    0 0 0 rgb(226, 238, 62), 
+    0 0 0 rgb(124, 199, 89);
+  font-size: 30px;
+  animation:c2 2s infinite cubic-bezier(0.9,-3000,0.9,5000);
+}
+
+
+@keyframes c2{
+  45%,100% {
+  text-shadow: 
+     0.03px -0.01px 0.01px rgb(218, 8, 8), 
+     0.02px  0.02px 0     rgb(0 255 0), 
+    -0.02px  0.02px 0     rgb(0 0 255);
+  }
+}
+
+/* css of blog compiler con gcc */
+.img-user{
+    max-width: 8%;
+    border-radius: 50%;
+    margin-left: 20px;
+    box-shadow: 0px 0px 10px 1px #a19f9f;
+}
+
+.img-user:hover{
+    box-shadow: 0px 0px 10px 1px #834242;
+    transform: scale(1.1);
+}
+.navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 60px;
+}
+
+.header-nav{
+    margin-top: -20px;
+    margin-left: 20px;
+    color: rgb(10, 10, 10);
+    font-size: 30px;
+}
+.page-blog{
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style page about*/
+.about{
+    background-color: #f8f4f4;
+    color: rgb(8, 8, 8);
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px 1px #bbb0b0;
+}
+
+/*imagenes*/
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.img-linkedin{
+    width: 40px;
+    height: 40px;
+
+}
+
+.img-github{
+    width: 40px;
+    height: 40px;
+}
+
+.img-mail2{
+    width: 40px;
+    height: 40px;
+}
+
+/* Style social bar */
+
+.social-bar {
+    position: fixed;
+    right: 0;
+    top: 55%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    transition: all .5s;
+
+}
+
+.icon-linkedin {
+    background-color: #0077B5;
+}
+
+.icon-github {
+    background-color: rgb(189, 185, 185);
+}
+
+
+.icon-mail2 {
+    background-color: #0f46be;
+}
+
+.icon:first-child {
+    border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+    border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
