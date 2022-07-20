@@ -1,0 +1,30 @@
+
+    
+    <!-- Sección de login-->
+    <main class="py-3">
+        <div class="container-fluid pt-5">
+            <div class="row">
+                <div class="col-12 col-lg-3 text-center d-none d-lg-block"></div>
+                <div class="col-12 col-lg-6">
+                    <h1 class="mb-0">Inicio de Sesión</h1><br>
+                    <form style="border-top:4px solid var(--red)" id="login">
+                        <div class="form-group">
+                            <label class="pt-3" for="correo">Correo electrónico</label>
+                            <input type="email" class="form-control" name="correo" id="correo" placeholder="correo electrónico" />
+                            <label class="pt-3" for="correo">Contraseña</label>
+                            <input type="password" class="form-control" name="contraseña" id="contraseña" placeholder="contraseña" />
+                        </div><br>
+                        <button class="add_card mb-2" onclick="return validarLogin(this.form)" type="button">Continuar</button>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-3 text-center d-none d-lg-block"></div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <div id="resp_login"></div>
+
+   

@@ -1,0 +1,70 @@
+
+    
+    <!-- Sección de Registro-->
+    <main class="py-3" >
+        <div class="container-fluid pt-5">
+            <div class="row">
+                <div class="col-12 col-lg-3 text-center d-none d-lg-block"></div>
+                <div class="col-12 col-lg-6">
+                    <h1 class="mb-0">Registro</h1><br>
+                    <form style="border-top:4px solid var(--red)" id="registro">
+                        <div class="form-group">
+                            <label class="pt-3" for="correo">Usuario <sup>*</sup></label>
+                            <input type="TEXT" class="form-control" name="usuario" id="usuario" placeholder="Ejemplo: CARLOS" required/>
+                        </div>
+                        <div class="form-group">
+                            <label class="pt-3" for="correo">Correo electrónico <sup>*</sup></label>
+                            <input type="email" class="form-control" name="correo" id="correo" placeholder="Ejemplo: mailito@correo.com" required/>
+                        </div>
+                        <div class="form-group">
+                            <label class="pt-2" for="contraseña">Contraseña <sup>*</sup></label>
+                            <input type="password" class="form-control" name="contraseña" id="contraseña" placeholder="Contraseña" required/>
+                        </div>
+                        <div class="form-group">
+                            <label class="pt-2" for="confirmacion">Confirmación de contraseña <sup>*</sup></label>
+                            <input type="password" class="form-control" name="confirmacion" id="confirmacion" placeholder="Confirmación de contraseña" required/>
+                        </div>
+                        <div class="form-group">
+                            <label class="pt-2" for="inlineFormCustomSelect">Comida favorita <sup>*</sup></label>
+                            <select class="custom-select" name="genero" id="opciones" required>
+                                <option selected value="">Seleccione...</option>
+                                <option value="1">Papitas fritas</option>
+                                <option value="2">Pollo frito</option>
+                                <option value="3">Hamburguesa</option>
+                                <option value="4">Perro Caliente</option>
+                                <option value="5">Tacos</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="pt-2" for="edad"><b>Edad <sup>*</sup></b></label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="edad" id="exampleRadios1" value="option1" />
+                                <label class="form-check-label" for="exampleRadios1">Menor a 20</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="edad" id="exampleRadios2" value="option2" />
+                                <label class="form-check-label" for="exampleRadios2">Entre 20 y 40</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="edad" id="exampleRadios3" value="option3" />
+                                <label class="form-check-label" for="exampleRadios3">Mayor a 50</label>
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="terminos" id="exampleCheck1" required>
+                            <label class="form-check-label pt-2" for="exampleCheck1">Acepto los términos de uso <sup>*</sup></label>
+                        </div>
+                        <p class="pt-3" style="font-size: 14px; color: rgb(12, 12, 12);"><sup>*</sup>Campos obligatorios</p>
+                        <button type="button" class="add_card mb-2" onclick="return validarRegistro(this.form)">Continuar</button>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-3 text-center d-none d-lg-block"></div>
+            </div>
+        </div>
+    </main>
+
+      <br>
+
+      <div id="resp_registro"></div>
+    
+<br><br><br>

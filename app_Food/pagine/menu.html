@@ -1,0 +1,300 @@
+<h2><b>Menú</b></h2>
+<h4><b>Hamburguesas</b></h4>
+<div class="row">
+    <div class="col-xs-12 col-md-3">
+
+        <div class="card">
+            <img class="card-img-top"
+                src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2020/08/hamburguesa-2028707.jpg?itok=ujl3qgM9"
+                alt="Titulo" style="min-height: 150px;">
+            <div class="card-img-overlay detail">
+                2 Sándwiches BBQ Crunch (c/u 1 Filete de pollo apanado) + 1 Pop Corn Pequeño (Trocitos de pechuga de
+                pollo apanados) + 4 Alitas Picantes (Las alitas picantes hot wings equivalen a un trozo de ala) + 2 Papa
+                Pequeña + 2 Gaseosas PET 400ml
+                <br><br>
+                <button class="add_card" type="button" value="Agregar" name="btnAccion" style="margin-bottom: 10px;">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="card-body">
+                <span>Doble Carne</span>
+                <h5 class="card-title"><b>$25.200</b></h5>
+                <!-- <p class="card-text" >2 Sándwiches BBQ Crunch (c/u 1 Filete de pollo apanado) + 1 Pop Corn Pequeño (Trocitos de pechuga de pollo apanados) + 4 Alitas Picantes (Las alitas picantes hot wings equivalen a un trozo de ala) + 2 Papa Pequeña + 2 Gaseosas PET 400ml</p> -->
+
+                <form action="carrito.php" method="POST" id="producto<?php  echo $mostrar['id'];  ?>">
+                    <input type="hidden" name="id" id="id"
+                        value="<?php  echo openssl_encrypt($mostrar['id'],COD,KEY);  ?>">
+                    <input type="hidden" name="nombre" id="nombre"
+                        value="<?php  echo openssl_encrypt($mostrar['nombre'],COD,KEY);  ?>">
+                    <input type="hidden" name="precio" id="precio"
+                        value="<?php  echo openssl_encrypt($mostrar['precio'],COD,KEY);  ?>">
+                    <!-- <label>Cantidad:</label><input type="number" name="cantidad" id="cantidad" value="1" style="width: 50px;"> -->
+
+
+
+
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <h4><b>Hot dogs</b></h4>
+
+    <div class="col-xs-12 col-md-3">
+
+        <div class="card">
+            <img class="card-img-top"
+                src="https://cedritos.perrosjyr.com/wp-content/uploads/2018/04/PERRO-TRADICIONAL-scaled.jpg"
+                alt="Titulo" style="min-height: 150px;">
+            <div class="card-img-overlay detail">
+                2 Sándwiches BBQ Crunch (c/u 1 Filete de pollo apanado) + 1 Pop Corn Pequeño (Trocitos de pechuga de
+                pollo apanados) + 4 Alitas Picantes (Las alitas picantes hot wings equivalen a un trozo de ala) + 2 Papa
+                Pequeña + 2 Gaseosas PET 400ml
+                <br><br>
+                <button class="add_card" type="button" value="Agregar" name="btnAccion" style="margin-bottom: 10px;">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="card-body">
+                <span>Sencilla</span>
+                <h5 class="card-title"><b>$15.000</b></h5>
+                <!-- <p class="card-text" >2 Sándwiches BBQ Crunch (c/u 1 Filete de pollo apanado) + 1 Pop Corn Pequeño (Trocitos de pechuga de pollo apanados) + 4 Alitas Picantes (Las alitas picantes hot wings equivalen a un trozo de ala) + 2 Papa Pequeña + 2 Gaseosas PET 400ml</p> -->
+
+                <form action="carrito.php" method="POST" id="producto<?php  echo $mostrar['id'];  ?>">
+                    <input type="hidden" name="id" id="id"
+                        value="<?php  echo openssl_encrypt($mostrar['id'],COD,KEY);  ?>">
+                    <input type="hidden" name="nombre" id="nombre"
+                        value="<?php  echo openssl_encrypt($mostrar['nombre'],COD,KEY);  ?>">
+                    <input type="hidden" name="precio" id="precio"
+                        value="<?php  echo openssl_encrypt($mostrar['precio'],COD,KEY);  ?>">
+                    <!-- <label>Cantidad:</label><input type="number" name="cantidad" id="cantidad" value="1" style="width: 50px;"> -->
+
+
+
+
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-xs-12 col-md-3">
+
+        <div class="card">
+            <img class="card-img-top"
+                src="https://misrecetascolombia.com/wp-content/uploads/2020/12/Perros-Calientes-Colombianos.jpg"
+                alt="Titulo" style="min-height: 150px;">
+            <div class="card-img-overlay detail">
+                2 Sándwiches BBQ Crunch (c/u 1 Filete de pollo apanado) + 1 Pop Corn Pequeño (Trocitos de pechuga de
+                pollo apanados) + 4 Alitas Picantes (Las alitas picantes hot wings equivalen a un trozo de ala) + 2 Papa
+                Pequeña + 2 Gaseosas PET 400ml
+                <br><br>
+                <button class="add_card" type="button" value="Agregar" name="btnAccion" style="margin-bottom: 10px;">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="card-body">
+                <span>Especial</span>
+                <h5 class="card-title"><b>$22.200</b></h5>
+                <!-- <p class="card-text" >2 Sándwiches BBQ Crunch (c/u 1 Filete de pollo apanado) + 1 Pop Corn Pequeño (Trocitos de pechuga de pollo apanados) + 4 Alitas Picantes (Las alitas picantes hot wings equivalen a un trozo de ala) + 2 Papa Pequeña + 2 Gaseosas PET 400ml</p> -->
+
+                <form action="carrito.php" method="POST" id="producto<?php  echo $mostrar['id'];  ?>">
+                    <input type="hidden" name="id" id="id"
+                        value="<?php  echo openssl_encrypt($mostrar['id'],COD,KEY);  ?>">
+                    <input type="hidden" name="nombre" id="nombre"
+                        value="<?php  echo openssl_encrypt($mostrar['nombre'],COD,KEY);  ?>">
+                    <input type="hidden" name="precio" id="precio"
+                        value="<?php  echo openssl_encrypt($mostrar['precio'],COD,KEY);  ?>">
+                    <!-- <label>Cantidad:</label><input type="number" name="cantidad" id="cantidad" value="1" style="width: 50px;"> -->
+
+
+
+
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <h4><b>Pizza</b></h4>
+
+
+    <div class="col-xs-12 col-md-3">
+
+        <div class="card">
+            <img class="card-img-top"
+                src="https://www.lavanguardia.com/files/og_thumbnail/files/fp/uploads/2021/03/30/6063031b90a87.r_d.1083-871-0.jpeg"
+                alt="Titulo" style="min-height: 150px;">
+            <div class="card-img-overlay detail">
+                2 Sándwiches BBQ Crunch (c/u 1 Filete de pollo apanado) + 1 Pop Corn Pequeño (Trocitos de pechuga de
+                pollo apanados) + 4 Alitas Picantes (Las alitas picantes hot wings equivalen a un trozo de ala) + 2 Papa
+                Pequeña + 2 Gaseosas PET 400ml
+                <br><br>
+                <button class="add_card" type="button" value="Agregar" name="btnAccion" style="margin-bottom: 10px;">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="card-body">
+                <span>Porcion</span>
+                <h5 class="card-title"><b>$12.000</b></h5>
+                <!-- <p class="card-text" >2 Sándwiches BBQ Crunch (c/u 1 Filete de pollo apanado) + 1 Pop Corn Pequeño (Trocitos de pechuga de pollo apanados) + 4 Alitas Picantes (Las alitas picantes hot wings equivalen a un trozo de ala) + 2 Papa Pequeña + 2 Gaseosas PET 400ml</p> -->
+
+                <form action="carrito.php" method="POST" id="producto<?php  echo $mostrar['id'];  ?>">
+                    <input type="hidden" name="id" id="id"
+                        value="<?php  echo openssl_encrypt($mostrar['id'],COD,KEY);  ?>">
+                    <input type="hidden" name="nombre" id="nombre"
+                        value="<?php  echo openssl_encrypt($mostrar['nombre'],COD,KEY);  ?>">
+                    <input type="hidden" name="precio" id="precio"
+                        value="<?php  echo openssl_encrypt($mostrar['precio'],COD,KEY);  ?>">
+                    <!-- <label>Cantidad:</label><input type="number" name="cantidad" id="cantidad" value="1" style="width: 50px;"> -->
+
+
+
+
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <h4><b>Bebidas</b></h4>
+
+    <div class="col-xs-12 col-md-3">
+
+        <div class="card">
+            <img class="card-img-top"
+                src="https://www.diariolibre.com/binrepository/1970x1314/0c37/1970d1024/none/10904/IGUN/shutterstock-1481415659_17053662_20210817230135.jpg"
+                alt="Titulo" style="min-height: 150px;">
+            <div class="card-img-overlay detail">
+                2 Sándwiches BBQ Crunch (c/u 1 Filete de pollo apanado) + 1 Pop Corn Pequeño (Trocitos de pechuga de
+                pollo apanados) + 4 Alitas Picantes (Las alitas picantes hot wings equivalen a un trozo de ala) + 2 Papa
+                Pequeña + 2 Gaseosas PET 400ml
+                <br><br>
+                <button class="add_card" type="button" value="Agregar" name="btnAccion" style="margin-bottom: 10px;">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="card-body">
+                <span>Productos postobon</span>
+                <h5 class="card-title"><b>$3000</b></h5>
+                <!-- <p class="card-text" >2 Sándwiches BBQ Crunch (c/u 1 Filete de pollo apanado) + 1 Pop Corn Pequeño (Trocitos de pechuga de pollo apanados) + 4 Alitas Picantes (Las alitas picantes hot wings equivalen a un trozo de ala) + 2 Papa Pequeña + 2 Gaseosas PET 400ml</p> -->
+
+                <form action="carrito.php" method="POST" id="producto<?php  echo $mostrar['id'];  ?>">
+                    <input type="hidden" name="id" id="id"
+                        value="<?php  echo openssl_encrypt($mostrar['id'],COD,KEY);  ?>">
+                    <input type="hidden" name="nombre" id="nombre"
+                        value="<?php  echo openssl_encrypt($mostrar['nombre'],COD,KEY);  ?>">
+                    <input type="hidden" name="precio" id="precio"
+                        value="<?php  echo openssl_encrypt($mostrar['precio'],COD,KEY);  ?>">
+                    <!-- <label>Cantidad:</label><input type="number" name="cantidad" id="cantidad" value="1" style="width: 50px;"> -->
+
+
+
+
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-md-3">
+
+        <div class="card">
+            <img class="card-img-top"
+                src="https://www.eluniverso.com/resizer/XDCSRrWf-mQVhi9fw2igV2hzPg8=/1005x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/6O3SHHDC55GTHHHGY4HAWTVD5A.jpg"
+                alt="Titulo" style="min-height: 150px;">
+            <div class="card-img-overlay detail">
+                2 Sándwiches BBQ Crunch (c/u 1 Filete de pollo apanado) + 1 Pop Corn Pequeño (Trocitos de pechuga de
+                pollo apanados) + 4 Alitas Picantes (Las alitas picantes hot wings equivalen a un trozo de ala) + 2 Papa
+                Pequeña + 2 Gaseosas PET 400ml
+                <br><br>
+                <button class="add_card" type="button" value="Agregar" name="btnAccion" style="margin-bottom: 10px;">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="card-body">
+                <span>Coca Cola</span>
+                <h5 class="card-title"><b>$3000</b></h5>
+                <!-- <p class="card-text" >2 Sándwiches BBQ Crunch (c/u 1 Filete de pollo apanado) + 1 Pop Corn Pequeño (Trocitos de pechuga de pollo apanados) + 4 Alitas Picantes (Las alitas picantes hot wings equivalen a un trozo de ala) + 2 Papa Pequeña + 2 Gaseosas PET 400ml</p> -->
+
+                <form action="carrito.php" method="POST" id="producto<?php  echo $mostrar['id'];  ?>">
+                    <input type="hidden" name="id" id="id"
+                        value="<?php  echo openssl_encrypt($mostrar['id'],COD,KEY);  ?>">
+                    <input type="hidden" name="nombre" id="nombre"
+                        value="<?php  echo openssl_encrypt($mostrar['nombre'],COD,KEY);  ?>">
+                    <input type="hidden" name="precio" id="precio"
+                        value="<?php  echo openssl_encrypt($mostrar['precio'],COD,KEY);  ?>">
+                    <!-- <label>Cantidad:</label><input type="number" name="cantidad" id="cantidad" value="1" style="width: 50px;"> -->
+
+
+
+
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-xs-12 col-md-3">
+
+        <div class="card">
+            <img class="card-img-top"
+                src="https://www.totalfood.com.ar/images/blog/como-preparar-jugos-naturales-seguros.jpg"
+                alt="Titulo" style="min-height: 150px;">
+            <div class="card-img-overlay detail">
+                2 Sándwiches BBQ Crunch (c/u 1 Filete de pollo apanado) + 1 Pop Corn Pequeño (Trocitos de pechuga de
+                pollo apanados) + 4 Alitas Picantes (Las alitas picantes hot wings equivalen a un trozo de ala) + 2 Papa
+                Pequeña + 2 Gaseosas PET 400ml
+                <br><br>
+                <button class="add_card" type="button" value="Agregar" name="btnAccion" style="margin-bottom: 10px;">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="card-body">
+                <span>Jugos Naturales</span>
+                <h5 class="card-title"><b>$5000</b></h5>
+                <!-- <p class="card-text" >2 Sándwiches BBQ Crunch (c/u 1 Filete de pollo apanado) + 1 Pop Corn Pequeño (Trocitos de pechuga de pollo apanados) + 4 Alitas Picantes (Las alitas picantes hot wings equivalen a un trozo de ala) + 2 Papa Pequeña + 2 Gaseosas PET 400ml</p> -->
+
+                <form action="carrito.php" method="POST" id="producto<?php  echo $mostrar['id'];  ?>">
+                    <input type="hidden" name="id" id="id"
+                        value="<?php  echo openssl_encrypt($mostrar['id'],COD,KEY);  ?>">
+                    <input type="hidden" name="nombre" id="nombre"
+                        value="<?php  echo openssl_encrypt($mostrar['nombre'],COD,KEY);  ?>">
+                    <input type="hidden" name="precio" id="precio"
+                        value="<?php  echo openssl_encrypt($mostrar['precio'],COD,KEY);  ?>">
+                    <!-- <label>Cantidad:</label><input type="number" name="cantidad" id="cantidad" value="1" style="width: 50px;"> -->
+
+
+
+
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br><br><br>

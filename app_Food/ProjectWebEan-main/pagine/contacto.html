@@ -1,0 +1,43 @@
+<div>
+
+    <form class="contacto" id="contact">
+        <label>Nombre Completo*</label>
+        <input name="name" required>
+        <label>Correo*</label>
+        <input name="mail"  required>
+        <label>Telefono*</label>
+        <input name="phone" required>
+        <label>Mensaje*</label>
+        <textarea name="message"></textarea><br>
+        <center>
+        <button class="add_card" style="width: 30% !important;" type="button" id="send">Enviar Mensaje</button>
+    </center>
+    </form>
+</div>
+<br>
+<div id="resp_send"></div>
+
+<script>
+$("#send").click(function(){
+
+$.ajax({
+    type:'POST',
+    url:'includes/send_contact.php',
+    data:$('#contact').serialize(),
+    success:function(data){
+        $('#resp_send').html(data);
+    }
+})
+
+
+
+
+
+})
+
+</script>
+
+
+
+
+
