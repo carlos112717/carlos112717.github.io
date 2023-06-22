@@ -1,20 +1,63 @@
-/*CSS Reset / Normalize*/
-/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
-en las secciones señaladas */
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
+/******************************************/
+/* Estilos reset css */
+/*****************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/******************************************/
+/* Fin reset css */
+/*****************************************/
 
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
+   --font-text: 'Raleway';
+   --color-text: #464646;
+   --espacio-line-text: normal;
 }
 
 body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway';
+    font-family: var(--font-text);
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -39,27 +82,210 @@ con una interfaz de usuario compleja, y permite la reutilización del código ex
 Enlace de la documentación oficial!
 https://en.bem.info/methodology/quick-start/*/
 
+
 /*Sección Menu*/
 
 section.menu{
+    display: flex;
+	justify-content: space-between;
+	margin-top: 2.5rem;
+	margin-bottom: 1.7rem;
+	padding-left: 4.5rem;
+	padding-right: 4.5rem;
+}
 
+.menu__nav{
+	display: flex;
+	align-items: center;
+}
+
+.menu__header{
+	display: flex;
+	align-items: center;
+}
+
+.menu__title{
+    display: flex;
+	font-weight: 600;
+	color: var(--color-text);
+	margin-left: .5rem;
+	font-size: 16px;
+}
+
+.menu__list{
+	display: flex;
+	font-size: 16px;
+}
+
+
+
+.menu__list__item{
+	margin-right: 2.5rem;
+	
+}
+
+.link__nav{
+	color: var(--color-text);
+}
+
+.contacto--head{
+	visibility: hidden;
 }
 
 /*Sección Title*/
 
 section.title{
+	display: flex;
+	margin-bottom: 1.7rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	
+}
 
+.title__div{
+	display: flex;
+	align-items: center;
+}
+
+.title__profile{
+	order: 1;
+	width: 20rem;
+	margin-left: .5rem;
+	
+}
+
+.title__bio{
+	font-size: 52px;
+	font-weight: bold;
+	margin-top: 2.5rem;
+	font-family: var(--font-text);
+	color: var(--color-text);
+	margin-bottom: 2rem;
+	line-height: var(--espacio-line-text);
+}
+
+.title__subsection{
+	font-size: 22px;
+	font-family: var(--font-text);
+	color: var(--color-text);
+	line-height: var(--espacio-line-text);
+	font-weight: 100;
+
+}
+
+.title__container{
+	display: inline-block;
+	width: 65%;
+}
+
+.title__network{
+	display: flex;
+	margin-top: 2rem;
+	align-items: center;
+}
+
+.title__network__item{
+	margin-right: 1.5rem;
+}
+
+.link__network--item{
+	color: var(--color-text);
+	font-family: var(--font-text);
+	font-size: 16px;
 }
 
 /*Sección About*/
 
 section.about{
+	display: flex;
+	background: #EAF2FD;
+}
 
+.about__container{
+	width: 65%;
+	padding: 3rem 4rem;
+}
+
+.about__title{
+	margin-bottom: 1.5rem;
+	color: var(--color-text);
+	font-weight: bold;
+	font-family: var(--font-text);
+	font-size: 32px;
+}
+
+.about__paragraph{
+	font-weight: 100;
+	color: var(--color-text);
+	font-family: var(--font-text);
+	margin-bottom: 1.5rem;
+	line-height: var(--espacio-line-text);
+}
+
+/*section skills*/
+section.skills{
+	display: flex;
+	flex-direction: column;
+	margin-top: 2.5rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+}
+
+.skills__title{
+	text-align: center;
+	margin-bottom: 2rem;
+	color: var(--color-text);
+	font-weight: bold;
+	font-size: 32px;
+	font-family: var(--font-text);
+	
+}
+
+.skills__line{
+	display: flex;
+	align-items: center;
+	margin-bottom: 2rem;
+	
+}
+
+.skills__box{
+	display: flex;
+	background: #FFFFFF;
+	width: 10rem;
+	height: 10rem;
+	margin-right: 1.5rem;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.skills__img{
+	display: flex;
+	padding-top: 5.5rem;
+	padding-left: 0.5rem;
+	
+	
+}
+
+.skills__name{
+	display: flex;
+	font-family: var(--font-text);
+	color: var(--color-text);
+	font-weight: bold;
+	font-size: 1rem;
+	text-align: left;
+	padding-left: 0.5rem;
+	padding-top: 1rem;
+	align-content: center;
+	
 }
 
 /*Sección Hobbies*/
 
 section.hobbies{
+	display: flex;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	flex-direction: column;
+	justify-content: space-between;
     
 }
 
