@@ -93,8 +93,6 @@ section.menu{
 	margin-bottom: 1.7rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	/*padding-left: 6.25rem;
-	padding-right: 6.25rem;*/
 }
 
 .menu__header{
@@ -123,8 +121,6 @@ section.menu{
 
 .menu__list__item{
 	display: none;
-	/*display: flex;
-	margin-right: 2.5rem;*/
 }
 
 .link__nav{
@@ -132,6 +128,13 @@ section.menu{
 	color: var(--color-text);
 	font-size: 1rem;
 	font-weight: 500;
+}
+
+.contacto--head{
+	font-family: var(--font-text);
+	color: var(--color-text);
+	font-weight: 400;
+	font-size: 0.875rem;
 }
 
 
@@ -142,15 +145,11 @@ section.title{
 	margin-bottom: 1.7rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	/*padding-left: 6.25rem;
-	padding-right: 6.25rem;*/
-	
 }
 
 .title__div{
 	display: flex;
 	flex-direction: column;
-	/*justify-content: space-between;*/
 }
 
 .title__profile{
@@ -232,13 +231,10 @@ section.about{
 .about__title{
 	margin-bottom: 1rem;
 	padding-top: 1.5rem;
-	/*margin-bottom: 1.5rem;
-	padding-top: 2.5rem;*/
 	color: var(--color-text);
 	font-weight: bold;
 	font-family: var(--font-text);
 	font-size: 1.375rem;
-	/*font-size: 2rem;*/
 }
 
 .about__paragraph{
@@ -553,7 +549,6 @@ section.formcontato{
 .formcontato__contacto{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	/*padding-top: 5rem;
 	padding-bottom: 3.5rem;*/
 }
@@ -572,7 +567,7 @@ section.formcontato{
 	flex-direction: column;
 	padding-left: 1.4rem;
 	padding-right: 1.4rem;
-	align-items: center;
+	justify-content: flex-start;
 }
 
 .formcontato__title{
@@ -614,7 +609,6 @@ section.formcontato{
 
 .formcontato__input{
 	display: flex;
-	width: 100%;
 	height: 3.5rem;
 	margin-bottom: 2rem;
 	border: none;
@@ -680,59 +674,178 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Tablet*/
 @media (min-width: 768px) {
 
+/*sections*/
+section.menu, section.title, section.skills,
+section.hobbies, .about__container, .academic__courses{
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+section.academic{
+	padding-top: 1rem;
+}
 /* Menú */
-.menu__nav{
-	
-}
-
-.menu__header{
-	
-}
-
-.menu__title{
-    
-}
-
-.menu__list{
-	
-}
-
-
-.menu__list__item{
-	
-}
-
-.link__nav{
-	
-}
-
 .contacto--head{
-	
+	font-size: 1rem;
+	font-weight: bold;
 }
+
 /*title*/
+.title__div{
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: .5rem;
+}
+
+.title__profile{
+	width: 9.125rem;
+	height: 9.125rem;
+	order: 1;
+}
+
+.title__container{
+	display: inline-block;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+}
+
+.title__subsection{
+	font-size: 1rem;
+}
+
+.title__network__item{
+	margin-right: 3rem;
+	/*margin-right: 1.5rem;*/
+}
+
+.link__network--item{
+	font-size: 1rem;
+}
+
 
 /*Skills*/
+.skills__line, .hobbies__line{
+	flex-direction: row;
+	justify-content: space-between;
+	height: auto;
+}
 
+.skills__box, .hobbies__box{
+	width: 14rem;
+	height: 7.375rem;
+}
 /*Hobbies*/
 
 /*Formación Académica*/
-
-/*Experiencia Profesional*/
-
+.academic__title, .experience__section__title{
+	padding-bottom: 2rem;
 }
 
-/*Mobile*/
-@media (min-width: 375px) {
+.academic__courses{
+	flex-direction: row;
+	justify-content: space-between;
+}
 
+
+.academic__courses__item__img{
+	width: 14rem;
+	height: 7.375rem;
+}
+
+.academic__courses__item__title{
+	font-size: 1rem;
+}
+
+/*Experiencia Profesional*/
+.experience__img{
+	width: 44rem;
+	height: 20rem;
+}
+
+
+/*form Contact*/
+.formcontato__text{
+	padding-right: .5rem;
+	
+}
+
+.formcontato__subtext{
+	font-size: 1rem;
+}
+
+.formcontato__input{
+	width: 43rem;
+}
+
+::-webkit-input-placeholder{
+	font-size: 1rem;
+}
+}
+
+/*Escritorio*/
+@media screen and (min-width: 1024px){
+/*Sections*/
+section.menu, section.title, section.skills,
+section.hobbies, .about__container, .academic__courses{
+	padding-left: 6.25rem;
+	padding-right: 6.25rem;
+}
 /*Menu*/
+.menu__list__item{
+	display: flex;
+	margin-right: 2.5rem;
+}
 
+.contacto--head{
+	display: none;
+}
 
 /*Titulo*/
+.title__profile{
+	width: 23rem;
+	height: 23rem;
+}
+
+.title__container{
+	display: inline-block;
+	width: 75%;
+	align-self: center;
+}
+.title__subsection{
+	font-size: 1.375rem;
+}
+
+.title__bio{
+	font-size: 3.25rem;
+}
+
+.about__title{
+	margin-bottom: 1.5rem;
+	padding-top: 2.5rem;
+	font-size: 2rem;
+}
+
+.title__network{
+	padding-top: 1.5rem;
+}
 
 /*Sección sobre mi*/
+.about__container{
+	width: 55%;
+}
 
+.about__paragraph{
+	font-size: 1rem;
+}
 /*Skills*/
+.skills__line, .hobbies__line{
+	margin-left: .5rem;
+}
 
+.skills__box, .hobbies__box{
+	width: 11rem;
+	height: 10.875rem;
+}
 /*Hobbies*/
  
 /*Formación Académica*/
