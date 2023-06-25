@@ -335,15 +335,16 @@
                             siguiente
                             formulario y me pondré en contacto con usted lo
                             antes posible. </h3>
-                        <form class="formcontato__form" name="form">
+                        <form class="formcontato__form" name="form"
+                            onsubmit="return validarFormulario()">
                             <input class="formcontato__input" type="text"
                                 name="nombre" placeholder="Nombre">
                             <input class="formcontato__input" type="email"
                                 name="email" placeholder="E-mail">
                             <input class="formcontato__input" type="text"
-                                name="asunto" placeholder="Assunto">
+                                name="asunto" placeholder="Asunto">
                             <textarea class="formcontato__textarea" rows="5"
-                                cols="40" id="mensagem" name="mensaje"
+                                cols="40" id="mensaje" name="mensaje"
                                 placeholder="Mensaje"></textarea>
                             <button type="submit" class="formcontato__botao">Enviar
                                 mensaje</button>
